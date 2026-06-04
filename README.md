@@ -61,7 +61,7 @@ source devel/setup.bash
 
 1. Ensure [Setup](#1-setup) and [Installation](#2-build-data-collection-package) steps are completed 
 2. Update Config files in ``` /configs ``` based on actual Radar configurations
-3. Ensure to update the config file path and storage path in ```/ros_ws/src/sensor_bringup/launch```
+3. Ensure to update the config file path, storage path, and radar ports in ```/ros_ws/src/sensor_bringup/launch```
 3. To execute Data collection with a Real Time Dashboard 
 ``` 
 cd real_data_rover_setup
