@@ -52,15 +52,15 @@ source /opt/ros/noetic/setup.bash
 
 cd real_data_rover_setup/wheeltec
 
-#Build Robot Operatin package
+#Build Robot Control package
 catkin_make 
 source devel/setup.bash
 ```
 
 ## 4. Data Collection 
 
-1. Ensure to Setup and Installations 
-2. Update Config files in ``` /configs ```based on actual Radar configurations
+1. Ensure [Setup](#1-setup) and [Installation](#2-build-data-collection-package) steps are completed 
+2. Update Config files in ``` /configs ``` based on actual Radar configurations
 3. Ensure to update the config file path and storage path in ```/ros_ws/src/sensor_bringup/launch```
 3. To execute Data collection with a Real Time Dashboard 
 ``` 
@@ -82,7 +82,7 @@ ros2 launch sensor_bringup sensors.launch.py
 ## 5. Robot Control 
 
 1. Ensure [ROS1 wheeltec package](#3-build-robot-package) is built 
-2. Ensure robot chasis is connected 
+2. Ensure robot chassis is connected 
 3. Run python script 
 ``` 
 source /opt/ros/noetic/setup.bash
